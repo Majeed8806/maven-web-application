@@ -1,8 +1,8 @@
 node {
 def mavenhome = tool name: 'maven3.8.5'
-echo 'node name is : ${env.NODE_NAME}'
-echo 'Branch name is : ${env.BRANCH_NAME}'
-echo 'Build No. : ${env.BUILD_NUMBER}'
+echo 'node name is : ${env.NODE_NAME} ' 
+echo 'Branch name is : ${env.BRANCH_NAME} '
+echo 'Build No. : ${env.BUILD_NUMBER} '
 
 
 
