@@ -17,7 +17,7 @@ stage('upload artiface into nexus'){
 sh "$mavenhome/bin/mvn deploy"
 }
 
-stage('deploy app to tocat'){
+stage('deploy app to tomcat'){
 sshagent(['25cf5ffc-4ee3-4b20-acfc-c91dbbac8856']) {
     sh"scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@3.110.127.56:/opt/apache-tomcat-9.0.80/webapps"
 }
