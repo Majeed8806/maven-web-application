@@ -4,7 +4,7 @@ echo "node name is : ${env.NODE_NAME} "
 echo "Branch name is : ${env.BRANCH_NAME} "
 echo "Build No. : ${env.BUILD_NUMBER} "
 
-properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), [$class: 'JobLocalConfiguration', changeReasonComment: ''], pipelineTriggers([githubPush()])])
+properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), [$class: 'JobLocalConfiguration', changeReasonComment: '']])
 
 stage('CheckoutCode') {
 
